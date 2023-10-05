@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 04 - Formulários</title>
+</head>
+<!------------------------------------------------------------------------------>
+
+<body bgcolor="silver">
+    <h1 align="center">
+        <img src="Imagens/Logo Pichau.png" width="200">
+    </h1>
+    <h2 align="center" size="30">Pichau</h2>
+
+    <hr color="black" size="3">
+    <!------------------------------------------------------------------------------>
+    <table width="800" align="center" bgcolor="silver">
+        <tr>
+            <td>
+                <form action="enviar.php" method="post" name="cadastro">
+                    <fieldset>
+                        <legend align="center"> <strong>📌Criar minha conta</legend></strong>
+                        <p align="center"> <strong>Informe os seus dados abaixo para criar sua conta.</p></strong>
+
+                        <table cellpadding="5" cellspacing="3" align="center">
+                            <tr>
+                                <td><label>Nome:</label>
+                                <td><input type="text" id="Nome" name="Nome" size="15" maxlength="60" placeholder="Nome"
+                                        required /></td>
+            </td>
+        <tr>
+
+            <td><label>Sobrenome:</label></td>
+            <td><input type="text" id="Sobrenome" name="Sobrenome" size="15" maxlength="60" placeholder="Sobrenome"
+                    required /></td>
+        </tr>
+        <tr>
+
+            <td><label>CPF:</label></td>
+            <td><input type="number" id="CPF name=" CPF" size="30" maxlength="11" placeholder="Informe seu CPF"
+                    required /></td>
+        </tr>
+        <tr>
+
+            <td><label>RG:</label></td>
+            <td><input type="text" id="RG" name="RG" size="20" maxlength="11" placeholder="RG" required /></td>
+
+        <tr></tr>
+
+        <td><label>Sexo:</label></td>
+        <td><input type="radio" name="sexo" id="sexo" value="Masculino" />
+            <label> Masculino </label>
+            <input type="radio" id="sexo" name="sexo" value="Feminino" />
+            <label>Feminino</label>
+        </td>
+
+        <tr></tr>
+        <td><label>Data de Nascimento:</label></td>
+        <td><input type="date" id="RG" name="RG" size="20" maxlength="5" placeholder="RG" required /></td>
+        <tr></tr>
+
+        <tr></tr>
+        <td><label>E-Mail:</label></td>
+        <td><input type="email" id="E-Mail" name="E-Mail" size="30" maxlength="30" placeholder="Digite seu E-Mail"
+                required /></td>
+
+        <tr></tr>
+        <td><label>Senha</label></td>
+        <td><input type="password" id="Senha" name="Senha" maxlength="8" placeholder="Digite sua Senha" required /></td>
+        <tr></tr>
+        </fieldset>
+        <br /> <br />
+        <!------------------------------------------------------------------------------>
+
+        <td><label>Endereço</label></td>
+        <td><input type="text" id="Endereço" name="Endereço" size="40" maxlength="30"
+                placeholder="Digite seu Endereço Completo" required /></td>
+        <tr></tr>
+
+
+        <td><label>Complemento</label></td>
+        <td><input type="text" id="Complemento" name="Complemento size=" 40" maxlength="30" placeholder="Complemento"
+                required /></td>
+        <tr></tr>
+
+        <td><label>Número de Telefone</label></td>
+        <td><input type="number" id="num-tel" name="num-tel" size="10" maxlength="9" placeholder="" required /></td>
+        <tr></tr>
+
+        <td><label>Estado:</label></td>
+        <td><select id="Estado" name="Estado" required>
+                <option value="" selected="selected">Selecione</option>
+                <optgroup label="Sudeste"></optgroup>
+                <option value="MG">Minas Gerais</option>
+                <option value="SP">São Paulo </option>
+                <option value="RJ">Rio De Janeiro</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="RN">Rio Grande do Nordeste</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+                <optgroup label="Sul"></optgroup>
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande Do Sul</option>
+                </optgroup>
+            </select></td>
+        <tr></tr>
+
+        <td><label>Cidade</label></td>
+        <td><input type="text" id="Cidade" name="Cidade" size="20" maxlength="20" placeholder="Digite sua Cidade"
+                required /></td>
+        <tr></tr>
+
+        <!------------------------------------------------------------------------------>
+
+        <td><input type="checkbox" checked> <label>Estou ciente e concordo com os</label> <a
+                href="https://www.pichau.com.br/termos-de-aceite" target="_blank">termos de aceite</a> e <a
+                href="https://www.pichau.com.br/politica-de-privacidade" target="_blank">políticas de privacidade</a> da
+            Pichau</td>
+        <tr></tr>
+
+        <td><input type="checkbox"> <label>Aceito receber marketing da Pichau por e-mail</label></td>
+        <tr></tr>
+        <!------------------------------------------------------------------------------>
+        <br />
+        <td><input type="submit" id="enviar" name="enviar" value="Enviar Dados" />
+            <input type="reset" id="limpar" name="limpar" value="Limpar" />
+        </td>
+        </tr>
+        </form>
+    </table>
+    </fieldset>
+</body>
+
+</html>
